@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:postgresql://localhost:5432</property>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">admin</property>
+        <property name="dialect">org.hibernate.dialect.PostgreSQL91Dialect</property>
+        <mapping resource="Body.hbm.xml"/>
+        <mapping resource="Transmission.hbm.xml"/>
+        <mapping resource="Oil.hbm.xml"/>
+        <mapping resource="Brand.hbm.xml"/>
+        <mapping resource="Model.hbm.xml"/>
+        <mapping resource="Role.hbm.xml"/>
+        <mapping resource="User.hbm.xml"/>
+        <mapping resource="Items.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

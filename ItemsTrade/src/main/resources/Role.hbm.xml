@@ -1,0 +1,9 @@
+<!--suppress ALL -->
+<hibernate-mapping>
+    <class name="models.Role" table="role">
+        <id name ="id" column="role_id">
+            <generator class="identity"/>
+        </id>
+        <property name="status" column="status"/>
+    </class>
+</hibernate-mapping>

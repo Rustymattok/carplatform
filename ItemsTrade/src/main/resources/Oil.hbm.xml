@@ -1,0 +1,9 @@
+<!--suppress ALL -->
+<hibernate-mapping>
+    <class name="models.Oil" table="oil">
+        <id name ="id" column="oil_id">
+            <generator class="identity"/>
+        </id>
+        <property name="name" column="name"/>
+    </class>
+</hibernate-mapping>
