@@ -23,7 +23,7 @@ public class ParsingDataBase {
         try {
             this.url = "https://auto.ru/catalog/cars/";
             this.document = Jsoup.connect(url).get();
-            this.filePath = "ParsingAutoRu\\src\\main\\resources\\scripts\\data_models.sql";
+            this.filePath = "..ParsingAutoRu\\src\\main\\resources\\scripts\\data_models.sql";
         } catch (IOException e) {
             LOGGER.fine("not correct link");
         }
