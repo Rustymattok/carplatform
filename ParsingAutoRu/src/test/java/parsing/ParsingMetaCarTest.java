@@ -32,8 +32,10 @@ public class ParsingMetaCarTest {
      * */
     @Test
     public void getJsonItemListTest() {
-//        List<HashMap> list = parsingMetaCar.jsonItemsList();
-//        parsingMetaCar.saveToFile(list,"../ParsingAutoRu/src/main/resources/lastitems.json");
+        ParsingDataBase parsingDataBase = new ParsingDataBase();
+        parsingDataBase.createDataBaseModels();
+        List<HashMap> list = parsingMetaCar.jsonItemsList();
+        parsingMetaCar.saveToFile(list,"../ParsingAutoRu/src/main/resources/lastitems.json");
     }
 
     @Test
