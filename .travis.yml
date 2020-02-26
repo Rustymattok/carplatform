@@ -1,5 +1,5 @@
 language: java
-before_script:
+script:
   -mvn package ParsingAutoRu
   -liquibase:migrate
   -mvn package ItemsTrade
