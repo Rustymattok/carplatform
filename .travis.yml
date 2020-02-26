@@ -1,7 +1,13 @@
 language: java
-script:
-  - mvn package ParsingAutoRu
-after_script:
-  -liquibase:migrate
+jobs:
+  include:
+    - stage: test1
+      script: ./test 1
+        - mvn package ParsingAutoRu
+      after_script:
+      -liquibase:migrate
+    - stage: test 2
+      script: ./test 2
+        - mvn package ItemsTrade
 services:
   - postgresql
