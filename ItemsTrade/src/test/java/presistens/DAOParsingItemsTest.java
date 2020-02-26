@@ -5,6 +5,14 @@ import org.junit.Test;
 import java.util.List;
 
 public class DAOParsingItemsTest {
+    /*
+     * Only for simulation parser not for doc file. For Build you should hide this block of test.
+     * */
+    @Test
+    public void addItemsLast() {
+        DAOParsingItems daoParsingItems = DAOParsingItems.getINSTANCE();
+        List<Item> list = daoParsingItems.getItem(daoParsingItems.getItemConvert("../ParsingAutoRu/src/main/resources/lastitems.json"));
+    }
     /**
      * Get Body object- parsing json file.
      */
@@ -62,13 +70,5 @@ public class DAOParsingItemsTest {
     public void getItem() {
         DAOParsingItems daoParsingItems = DAOParsingItems.getINSTANCE();
         List<Item> list = daoParsingItems.getItem(daoParsingItems.getItemConvert("../ParsingAutoRu/src/main/resources/lastitems.json"));
-    }
-    /*
-     * Only for simulation parser not for doc file. For Build you should hide this block of test.
-     * */
-    @Test
-    public void addItemsLast() {
-//        DAOParsingItems daoParsingItems = DAOParsingItems.getINSTANCE();
-//        List<Item> list = daoParsingItems.getItem(daoParsingItems.getItemConvert("../ParsingAutoRu/src/main/resources/lastitems.json"));
     }
 }
