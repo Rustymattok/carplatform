@@ -1,7 +1,7 @@
 language: java
 script:
-  -mvn package ParsingAutoRu
+  - mvn package ParsingAutoRu
+after_script:
   -liquibase:migrate
-  -mvn package ItemsTrade
 services:
   - postgresql
