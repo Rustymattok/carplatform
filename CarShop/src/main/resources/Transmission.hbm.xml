@@ -1,0 +1,9 @@
+<!--suppress ALL -->
+<hibernate-mapping>
+    <class name="models.Transmission" table="transmission">
+        <id name ="id" column="transmission_id">
+            <generator class="identity"/>
+        </id>
+        <property name="name" column="name"/>
+    </class>
+</hibernate-mapping>

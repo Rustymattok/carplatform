@@ -1,0 +1,17 @@
+<!--suppress ALL -->
+<hibernate-mapping>
+    <class name="models.Item" table="items">
+        <id name ="id" column="items_id">
+            <generator class="identity"/>
+        </id>
+        <property name="price" column="price"/>
+        <property name="image" column="image"/>
+        <property name="status" column="status"/>
+        <many-to-one name="brand" class="models.Brand" column="brand_id"/>
+        <many-to-one name="model" class="models.Model" column="model_id"/>
+        <many-to-one name="body" class="models.Body" column="body_id"/>
+        <many-to-one name="user" class="models.User" column="user_id"/>
+        <many-to-one name="transmission" class="models.Transmission" column="transmission_id"/>
+        <many-to-one name="oil" class="models.Oil" column="oil_id"/>
+    </class>
+</hibernate-mapping>

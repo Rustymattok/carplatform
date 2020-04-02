@@ -1,0 +1,10 @@
+<!--suppress ALL -->
+<hibernate-mapping>
+<class name="models.Model" table="models">
+    <id name ="id" column="model_id">
+        <generator class="identity"/>
+    </id>
+    <property name="name" column="name"/>
+    <many-to-one name="brand" class="models.Brand" column="models_id"/>
+</class>
+</hibernate-mapping>

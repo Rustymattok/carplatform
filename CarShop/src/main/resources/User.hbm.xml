@@ -1,0 +1,11 @@
+<!--suppress ALL -->
+<hibernate-mapping>
+    <class name="models.User" table="user_list">
+        <id name ="id" column="user_id">
+            <generator class="identity"/>
+        </id>
+        <property name="name" column="name"/>
+        <property name="login" column="login"/>
+        <many-to-one name="role" class="models.Role" column="role_id"/>
+    </class>
+</hibernate-mapping>
