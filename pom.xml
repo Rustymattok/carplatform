@@ -14,6 +14,7 @@
     <modules>
         <module>ParsingAutoRu</module>
         <module>ItemsTrade</module>
+        <module>CarShop</module>
     </modules>
 
 </project>
